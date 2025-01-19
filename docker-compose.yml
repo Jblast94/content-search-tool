@@ -1,0 +1,8 @@
+version: '3'
+services:
+  search_tool:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./search_tool.py:/app/search_tool.py
